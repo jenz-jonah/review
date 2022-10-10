@@ -1,0 +1,49 @@
+doctype html
+// Created By jonah jenz
+head
+  meta(charset='utf-8')
+  title dashboard 
+  link(rel='stylesheet' href='salesdashboard.css')
+.btn
+  span.fas.fa-bars
+nav.sidebar
+  .text
+    img.image(src='../img/jon.jpg' width='80px' height='70px')
+    |       DASHBOARD
+  ul
+    li.active
+      a(href='#') Stock
+    li
+      a.feat-btn(href='#')
+        | Sales
+        span.fas.fa-caret-down.first
+      ul.feat-show
+        li
+          a(href='#') Sale List
+        li
+          a(href='#') New Sales
+        li
+          a(href='#') Sale form
+    li
+      a.serv-btn(href='#')
+        | Credit
+        span.fas.fa-caret-down.second
+      ul.serv-show
+        li
+          a(href='#') Credit form
+        li
+          a(href='#') Credit list
+        li
+          a(href='#') New credit
+    li
+      a.serv-btn(href='#')
+        | Product
+        span.fas.fa-caret-down.third
+      ul.serv-show
+        li
+          a(href='#') Product form
+        li
+          a(href='#') Product list
+        li
+          a(href='#') New produce
+script(src='/salesdashboard.js')

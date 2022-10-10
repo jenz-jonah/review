@@ -1,0 +1,67 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='../css/credit.css')
+  link(rel='stylesheet' href='https://unicons.iconscout.com/release/v4.0.0/css/line.css')
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous')
+body
+  form(name='registration' method='POST' action='/credit/newCredit')
+    .container
+      header Credit form
+      .first
+        .det ails.personal
+          span.title Personal Details
+          .fields
+            .input-field
+              label  Buyer Name
+              input(type='text' placeholder='Enter your name' required='' name='BuyerName')
+            .input-field
+              label Type of Produce
+              input#field.form-control(type='text' name='TypeofProduce')
+              select
+                option(disabled='' selected='') Select the type
+                option Ceals
+                option Grains
+            .input-field
+              label Agent Name 
+              input(type='text' placeholder='Enter your name' required='' name='AgentName')
+            
+            .input-field
+              label Contact
+              input(type='number' placeholder='Enter your contact' required=''  name='Contact')
+            .input-field
+              label Due Date
+              input(type='date' placeholder='Enter your paying date' required=''  name='DueDate')
+            .input-field
+              label Location
+              input#field.form-control(type='text' name='Location')
+              select
+                option(selected='') Select location
+                option Matugga
+                option Maganjo
+            .input-field
+              label Tonnage
+              input(type='text' placeholder='Enter tonnage (kilo)' required=''  name='Tonnage')
+        
+            .input-field
+              label Produce Name
+              input(type='text' placeholder='produce name' required=''  name='ProduceName')
+            .input-field
+              label National ID Nin
+              input(type='number' placeholder='Enter NIN number' required=''  name='NationalIdNin')
+            .input-field
+              label  Date of Dispatch
+              input(type='date' placeholder='Enter your paying date' required=''  name='DateOfDispatch')
+            .input-field
+              label Amount Due
+              input(type='number' placeholder='shs' required=''  name='AmountDue')
+            
+          button.btn-submit(type='submit') submit
+          a(href="/credit/credit-list") Go Back to List
+          
+            
+
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM' crossorigin='anonymous') 
+ 

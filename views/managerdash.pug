@@ -1,0 +1,152 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Director Landing Page
+  link(rel='stylesheet' href='/css/managerdash.css')
+body
+  doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='board.css')
+  title Admin Dashboard
+#top.container
+  aside.sidebar-wrapper
+    .sidebar-header
+      h4 Jonah
+      .close-menu
+        i.fas.fa-chevron-left
+    nav.sidebar
+      .text
+        img.image(src='../img/jon.jpg' width='80px' height='70px')
+        |                   DASHBOARD
+      ul
+        li.active
+          a(href='#') Inventory
+        li
+          a.feat-btn(href='#')
+            | Sales
+            span.fas.fa-caret-down.first
+          ul.feat-show
+            li
+              a(href='#') Sale List
+            li
+              a(href='#') New Sales
+            li
+              a(href='#') Credit Sales
+        li
+          a.serv-btn(href='#')
+            | Purchase
+            span.fas.fa-caret-down.second
+          ul.serv-show
+            li
+              a(href='#') purchase order
+            li
+              a(href='#') purchase list
+        li
+          a(href='#') Products
+        li
+          a(href='#') Our Team
+        li
+          a(href='#') Feedback
+  main.content
+    header
+      .header-wrapper
+        .header-left
+          .toggle-icon
+            i.fas.fa-bars
+          i.fas.fa-search
+          input(type='text' placeholder='Search...')
+    section.main
+      .box.box-1
+        .box-left
+          h4 Karibu Groceries Limited
+          p Fresh And Dry products
+        .box-right
+          img(src='img/img3.png' alt='profile')
+      .box.box-2
+        .box-details
+          h4 5
+          span Products
+        .box-icon
+          i.fa.fa-product-hunt
+      .box.box-3
+        .box-details
+          h4 79
+          span sales
+        .box-icon
+          i.fas.fa-tasks
+      .box.box-4
+        .box-details
+          h4 124
+          span Purchases
+        .box-icon
+          i.fas.fa-coins
+      .box.box-5
+        .box-details
+          span Message
+        .box-icon
+          i.fas.fa-comment
+      .box.box-6
+        .box-header
+          h4 Reports
+          a(href='#') see all
+        .box-body
+          table
+            thead
+              tr
+                th product
+                th amount
+                th date
+            tbody
+              tr
+                td Beans
+                td ugx4250.00
+                td 03 Feb 2022
+              tr
+                td Maize
+                td ugx2500.00
+                td 05 Feb 2022
+              tr
+                td SoyaBean
+                td ugx4400.00
+                td 06 Feb 2022
+              tr
+                td CowPeas
+                td ugx5200.00
+                td 14 Feb 2022
+              tr
+                td G-Nuts
+                td ugx6500.00
+                td 18 Feb 2022
+      .box.box-8
+        .box-left
+          h4 profile report
+          span.year year 2022
+          span.percentage ^68.2%
+          h3 ugx84,686k
+        .box-right
+          i.fas.fa-chart-line
+    footer
+      .copyright
+        | copyright &copy; 2022. all right reserved.
+.switcher-container
+  .switcher-icon
+    i.fas.fa-cog
+  .switcher-close
+    i.fas.fa-times
+  .switcher-header
+    h3 theme customizer
+    h4 theme styles
+  .switcher-body
+    ul
+      li.active(data-color='#f7f7f7')
+      li(data-color='#212529')
+a.scroll-top(href='#top')
+  i.fas.fa-arrow-up
+script(src='/board.js')
+script(src='https://kit.fontawesome.com/9e5ba2e3f5.js' crossorigin='anonymous')
+

@@ -1,0 +1,48 @@
+extends ../layout 
+  block content
+
+link(rel='stylesheet' href='/css/landingpage.css')
+link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous')
+  .big-wrapper.light
+    img.shape(src='./img/shape.png' alt='')
+    header
+      .container
+        .logo
+          img(src='./img/img3.png' alt='Logo')
+          h3 Dealing in Dry Produce
+        .links
+          ul
+            li
+              a(href='#') Home
+            li
+              a(href='#') Sales
+            li
+              a(href='#') Dashbord 
+            li
+              a.btn(href='#') Login
+            li
+              a.btn(href='#') Sign  up
+        .overlay
+        .hamburger-menu
+          .bar
+    .showcase-area
+      .container
+        .left
+          .big-title
+            h1 KARIBU
+            h1 GROCERIES.
+          p.text
+            | Fresh and Dry products for you
+          .cta
+            a.btn(href='#') Get started
+        .right
+          img.person(src='/css/img/no1.jpg' alt='Image')
+    .bottom-area
+      .container
+        button.toggle-btn
+          i.far.fa-moon
+          i.far.fa-sun
+script(src='./landingpage.js')
+
+  include ../include/footer
+  

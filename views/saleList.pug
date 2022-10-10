@@ -1,0 +1,40 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Document
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx' crossorigin='anonymous')
+body
+    .container
+    h3 sale list
+    if sales. length
+        table.table
+            thead.thead-dark
+                tr
+                    th(scope='col') #
+                    th(scope='col') Customer
+                    th(scope='col') Product
+                    th(scope='col') Account type
+                    th(scope='col') Tonnage
+                    th(scope='col') Price
+                    th(scope='col') Amount
+            tbody
+            each sale in sales 
+                tr
+                    th #{sale._id}
+                    td #{sale.customer}
+                    td #{sale.product}
+                    td #{sale.accounttype}
+                    td #{sale.tonnage}
+                    td #{sale.price}
+                    td #{sale.amount}
+                    td
+                        form(method= "Post",Action="/sales/sale-list")
+                            input(type="hidden",name="_id",value=sale._id) 
+                            button(type="submit") DELETE
+                    td
+                        a(href="/editsale/" + sale._id) edit 
+    else 
+        p there are no sales       
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js' integrity='sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa' crossorigin='anonymous')

@@ -1,0 +1,159 @@
+doctype html
+// Created By jonah jenz
+head
+  meta(charset='utf-8')
+  title Dashboard 
+  link(rel='stylesheet' href='dashboard.css')
+  |   link(rel=&quot;stylesheet&quot;, href=&quot;booststrap-5.1.3-dist/css/booststrap.css&quot;)
+  script(src='https://code.jquery.com/jquery-3.4.1.js')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css')
+body
+  .btn
+    span.fas.fa-bars
+  nav.sidebar
+    .text
+      img.image(src='../img/jon.jpg' width='80px' height='70px')
+      |       DASHBOARD
+    ul
+      li.active
+        a(href='#') Inventory
+      li
+        a.feat-btn(href='#')
+          | Sales
+          span.fas.fa-caret-down.first
+        ul.feat-show
+          li
+            a(href='../SALES/sales.html') Sale List
+          li
+            a(href='#') New Sales
+          li
+            a(href='../SALES/credit.html') Credit Sales
+      li
+        a.serv-btn(href='#')
+          | Purchase
+          span.fas.fa-caret-down.second
+        ul.serv-show
+          li
+            a(href='../PURCHASE/orders.html') Orders
+          li
+            a(href='#') Supplier
+          li
+            a(href='#') Supplier
+      li
+        a(href='../LANDING/products.html') Products
+      li
+        a(href='../DASHBORD/team.html') Our Team
+      li
+        a(href='../LOGINPAGES/contactform.html') Feedback
+  .home-content
+    .overview-boxes
+      .box
+        .right-side
+          .box-topic Total Order
+          .number 40,876
+          .indicator
+            i.bx.bx-up-arrow-alt
+            span.text Up from yesterday
+        i.bx.bx-cart-alt.cart
+      .box
+        .right-side
+          .box-topic Total Sales
+          .number 38,876
+          .indicator
+            i.bx.bx-up-arrow-alt
+            span.text Up from yesterday
+        i.bx.bxs-cart-add.cart.two
+      .box
+        .right-side
+          .box-topic Total Profit
+          .number ugx12,876
+          .indicator
+            i.bx.bx-up-arrow-alt
+            span.text Up from yesterday
+        i.bx.bx-cart.cart.three
+      .box
+        .right-side
+          .box-topic Total Return
+          .number 11,086
+          .indicator
+            i.bx.bx-down-arrow-alt.down
+            span.text Down From Today
+        i.bx.bxs-cart-download.cart.four
+    .sales-boxes
+      .recent-sales.box
+        .title Recent Sales
+        .sales-details
+          ul.details
+            li.topic Date
+            li
+              a(href='#') 02 Jun 2022
+            li
+              a(href='#') 02 Jun 2022
+            li
+              a(href='#') 02 Jun 2022
+            li
+              a(href='#') 02 Jun 2022
+            li
+              a(href='#') 02 Jun 2022
+          ul.details
+            li.topic Customer
+            li
+              a(href='#') Solome N
+            li
+              a(href='#') Kaffu millers ltd
+            li
+              a(href='#') Roe Parter
+            li
+              a(href='#') Diana Penty
+            li
+              a(href='#') Martin Paw
+          ul.details
+            li.topic Sales
+            li
+              a(href='#') Delivered
+            li
+              a(href='#') Pending
+            li
+              a(href='#') Returned
+            li
+              a(href='#') Delivered
+            li
+              a(href='#') Pending
+          ul.details
+            li.topic Total
+            li
+              a(href='#')  Ugx 2,000,000
+            li
+              a(href='#') Ugx 2,000,000
+            li
+              a(href='#') Ugx 2,000,000
+            li
+              a(href='#') Ugx 2,000,000
+            li
+              a(href='#') Ugx 2,000,000
+        .button
+          a(href='#') See All
+      .top-sales.box
+        .title Top Seling Product
+        ul.top-sales-details
+          li
+            a(href='#')
+              img(src='../images/maiz-grain.jpg' alt='')
+              span.product maize
+            span.price Ugx 2,000,000
+          li
+            a(href='#')
+              img(src='../images/millet.avif' alt='')
+              span.product Millet 
+            span.price Ugx 1,900,000
+          li
+            a(href='#')
+              img(src='../images/soya beans.jpg' alt='')
+              span.product Soya Beans
+            span.price Ugx 1,720,000
+          li
+            a(href='#')
+              img(src='../images/maize2.jpg' alt='')
+              span.product Maize 2.
+            span.price Ugx 1,700,000
+  script(src='/dashboard.js')
